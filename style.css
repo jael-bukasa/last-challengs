@@ -1,322 +1,72 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+div {
+    --main-bg-color: hsl(300, 43%, 22%);
+}
+body {
     background-color: rgb(221, 219, 219);
     font-family: 'League Spartan', sans-serif;
 }
-.contenaire-principal{
+
+.contenaire-principal {
     background-color: white;
-    background-image:url(images/bg-pattern-top-desktop.svg) ;
-    height: 80vh;
-    width: 70%;
-    transform: translate(20%,12%);
+    background-image: url(images/bg-pattern-bottom-mobile.svg);
 }
-.image{
-    border-radius: 50%;
+
+.first-section {
+    padding: 50px;
 }
-.first-section{
-    height: 40vh;
-    display: flex;
-    gap:30%;
-    padding: 100px;
-}
-button{
-    width: 400px;
+
+button {
+    width: 270px;
     height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color:  hsl(300, 24%, 96%);
+    margin-bottom: 10px;
+    background-color: hsl(300, 24%, 96%);
     border: none;
     border-radius: 5px;
-    color: hsl(300, 43%, 22%) ;
+    color: var(--main-bg-color);
 }
 
-.frist-btn{
-    position: relative; 
-    margin-left: 30px;
-    margin-right: auto;
-    margin-top: auto;
-}
-.second-btn{
-    position: relative; 
-    margin-left: 60px;
-    margin-right: auto;
-    margin-top: auto;
-}
-
-.first-div__frist-section{
-    width:30% ; 
-}
-h2{
-    color: white;
-}
-h3{
-    color: hsl(333, 80%, 67%);
-}
-h1{
-    color: hsl(300, 43%, 22%);
+h1 {
+    color: var(--main-bg-color);
     font-family: 'League Spartan', sans-serif;
     font-size: 2.5em;
     padding-bottom: 30px;
-}
-.frist-paragraphe{
-    color:hsl(303, 10%, 53%); 
-    font-size: 1.2em;
-}
-.second-section{
-        height: 40vh;
-        display: flex;
-        gap:20px;
-        padding: 0 100px 0 100px;
-        color: white;
-}
-.first-div__second-section{
-background-color:hsl(300, 43%, 22%) ;
-border-radius: 5px;
-margin-bottom: 100px;
-}
-.second-div__second-section{
-    background-color:hsl(300, 43%, 22%) ;
-        position: relative; 
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        border-radius: 5px; 
-        margin-bottom: 80px;
-
+    text-align: center;
 }
 
-.last-div__second-section{
-    background-color:hsl(300, 43%, 22%) ;
-    position: relative; 
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        border-radius: 5px; 
-        margin-bottom: 60px;
-
+.frist-paragraphe {
+    color: var(--main-bg-color);
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 10px;
 }
-.entete-div{
+
+.second-section {
+    color: white;
+    padding: 0 50px 50px;
+}
+
+.second-section div {
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.image {
+    border-radius: 50%;
+    height: 40px;
+}
+.entete-div {
     display: flex;
     gap: 30px;
     padding: 30px;
+   padding-bottom: 0;
 }
-.image{
-    width: 50px;
-}
-.second-section__paragraphe{
-    padding: 0 30px 0px 30px;
+.second-section__paragraphe {
+    padding: 0 30px 30px 30px;
     font-family: 'League Spartan', sans-serif;
-}
-
-@media screen and (max-width: 1625px) {
-    h1{
-        font-size: 2.2em;
-        padding-bottom: 10px;
-    }
-    .frist-paragraphe{
-        font-size: 1em;
-    }
-    .first-section{
-        gap:20%;
-    }
-}  
-@media screen and (max-width: 1479px) {
-    
-    .first-section{
-        gap:10%;
-    }
-    .image{
-        width: 30px;
-    }
-    .entete-div{
-        padding: 20px;
-    }.second-section__paragraphe{
-        padding: 0 20px 0px 20px;
-    }
-}  
-@media screen and (max-width: 1383px) {
-    .image{
-        width: 25px;
-    }
-    .entete-div{
-        padding: 10px;
-    }
-.second-section__paragraphe{
-    padding: 0 10px 0px 10px;
-}
-}
-@media screen and (max-width: 1343px) {
-    h1{
-        font-size: 2em;
-        padding-bottom: 5px;
-    }
-    
-    .entete-div{
-        padding: 10px;
-    }.second-section__paragraphe{
-        padding: 0 10px 0px 10px;
-    }
-}
-@media screen and (max-width:1287px) {
-    button{
-        width: 300px;
-        margin-bottom: 10px;
-      
-    }
-}
-@media screen and (max-width:1141px) {
-    
-    .entete-div{
-        padding: 5px;
-    }
-    
-    h2{
-font-size: 16px;    
-}
-    h3{
-font-size: 15px;   
- }
- h1{
-    font-size: 30px;
- }
-}
-@media screen and (max-width:1129px) {
-    .frist-paragraphe{
-        font-size: 16px;
-    }
-  
- h1{
-    font-size: 25px;
- }
-}
-@media screen and (max-width:1083px) {
-    .frist-paragraphe{
-        font-size: 14px;
-    }
-  
- h1{
-    font-size: 20px;
- }
-}
-@media screen and (max-width:1015px) {
-    .first-section{
-        gap:5%;
-    
-}
-.first-div__second-section{
-
-margin-bottom: 90px;
-}
-.second-div__second-section{
-   
-        margin-top: 10px;
-        margin-bottom: 70px;
-
-}
-
-.last-div__second-section{
- 
-        margin-top: 30px;
-        margin-bottom: 50px;
-}
-.first-section{
-  
-    padding: 80px;
-
-
-}
-}
-
-@media screen and (max-width:901px) {
-    .first-section{
-        padding: 60px;
-    }
-    .first-div__second-section{
-
-        margin-bottom: 60px;
-        }
-        .second-div__second-section{
-           
-                margin-bottom: 40px;
-        
-        }
-        
-        .last-div__second-section{
-         
-                margin-bottom: 20px;
-        }
-}
-
-@media screen and (max-width:857px) {
-    
-
-    .first-section{
-        display: block;
-        gap:30%;
-        padding: 100px;
-    }
-    button{
-        width: 400px;
-        height: 50px;
-        margin-bottom: 20px;
-        
-    }
-    .frist-btn{
-        margin-left: 30px;
-  
-    }
-    .second-btn{
-        margin-left: 60px;
-      
-    }
-    .first-div__frist-section{
-        width:100% ; 
-    }
-    h1{
-        font-size: 2.5em;
-        padding-bottom: 30px;
-    }
-    .frist-paragraphe{
-        color:hsl(303, 10%, 53%); 
-        font-size: 1.2em;
-    }
-    .second-section{
-        display: block;
-        gap:20px;
-        padding: 0 100px 0 100px;
-}
-.first-div__second-section{
-
-margin-bottom: 100px;
-}
-.second-div__second-section{
-        margin-left: 20px;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: 80px;
-
-}
-
-.last-div__second-section{
-    
-        margin-left: 40px;
-        margin-right: auto;
-        margin-top: auto;
-        border-radius: 5px; 
-        margin-bottom: 60px;
-
-}
-
-.image{
-    width: 50px;
-}
-.second-section__paragraphe{
-    padding: 0 30px 0px 30px;
-}
 }
